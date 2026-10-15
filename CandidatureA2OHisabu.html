@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathan Hisabu – Candidature stage web, IA & gouvernance numérique | Alpha to Omega</title>
+<meta name="description" content="Candidature de Nathan Hisabu, étudiant en BUT Informatique, au stage Développement web, IA & gouvernance numérique chez Alpha to Omega.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    fontFamily: { serif: ['Spectral', 'Georgia', 'serif'], sans: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'] },
+    colors: { navy: '#14233f', ink: '#1e2b45', mist: '#f4f6fa', line: '#d9dfea', blue: '#3a6db0', sky: '#e6eef9' }
+  } }
+}
+</script>
+<style>
+  :focus-visible { outline: 2px solid #3a6db0; outline-offset: 3px; }
+  .hero-in { animation: rise .8s ease-out both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .hero-in { animation: none; } html { scroll-behavior: auto; } }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(180deg); }
+  .chev { transition: transform .2s; }
+</style>
+</head>
+<body class="bg-white text-ink font-sans antialiased leading-relaxed">
+
+<a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:m-3 focus:bg-white focus:p-2">Aller au contenu</a>
+
+<header class="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-line">
+  <nav class="max-w-5xl mx-auto px-5 h-14 flex items-center justify-between" aria-label="Navigation principale">
+    <a href="#top" class="font-serif text-lg font-semibold text-navy">Nathan Hisabu</a>
+    <ul class="hidden md:flex gap-6 text-sm">
+      <li><a class="hover:text-blue" href="#brief">Ma lecture du stage</a></li>
+      <li><a class="hover:text-blue" href="#parcours">Parcours</a></li>
+      <li><a class="hover:text-blue" href="#createur">Créateur</a></li>
+      <li><a class="hover:text-blue" href="#competences">Compétences</a></li>
+      <li><a class="hover:text-blue" href="#ia">Mon usage de l'IA</a></li>
+      <li><a class="hover:text-blue" href="#contact">Contact</a></li>
+    </ul>
+    <button id="menuBtn" class="md:hidden p-2 -mr-2" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </nav>
+  <ul id="mobileMenu" class="hidden md:hidden border-t border-line px-5 py-3 space-y-2 text-sm bg-white">
+    <li><a href="#brief">Ma lecture du stage</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#createur">Créateur</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#ia">Mon usage de l'IA</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+<main id="contenu">
+
+<!-- HERO -->
+<section id="top" class="bg-navy text-white">
+  <div class="max-w-5xl mx-auto px-5 py-20 md:py-28 hero-in">
+    <p class="text-sky/80 mb-5">Candidature à Alpha to Omega · Toulouse</p>
+    <h1 class="font-serif text-4xl md:text-6xl leading-tight max-w-3xl">
+      Données, IA, web : je construis, je teste, je mets en ligne.
+    </h1>
+    <p class="mt-6 max-w-2xl text-lg text-sky/90">
+      En 3<sup>e</sup> année de BUT Informatique à Toulouse, parcours données et systèmes d'information, je candidate au stage « Développement web, IA &amp; gouvernance numérique ». Ce site est ma candidature : je l'ai construit avec une IA, je l'ai relu, et je vous explique comment.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#brief" class="bg-white text-navy font-medium px-5 py-3 rounded-md hover:bg-sky">Voir ce que j'ai compris du stage</a>
+      <a href="#ia" class="border border-white/40 px-5 py-3 rounded-md hover:bg-white/10">Voir comment j'ai utilisé l'IA</a>
+    </div>
+  </div>
+</section>
+
+<!-- BRIEF -->
+<section id="brief" class="py-20">
+  <div class="max-w-5xl mx-auto px-5">
+    <h2 class="font-serif text-3xl md:text-4xl text-navy">Ce que j'ai compris du stage</h2>
+    <p class="mt-4 max-w-2xl">
+      Votre offre place le web au centre, avec l'IA comme outil de travail et la gouvernance numérique en complément (environ 25 % du temps). Voici, mission par mission, ma lecture et ce sur quoi je m'appuie aujourd'hui.
+    </p>
+
+    <div class="mt-10 overflow-x-auto border border-line rounded-lg">
+      <table class="w-full text-left text-sm min-w-[640px]">
+        <thead class="bg-mist text-navy">
+          <tr>
+            <th class="p-4 font-semibold w-1/4">Mission</th>
+            <th class="p-4 font-semibold w-[37%]">Ce que j'en comprends</th>
+            <th class="p-4 font-semibold">Ce que j'apporte, et ce que je dois apprendre</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-line align-top">
+          <tr>
+            <td class="p-4 font-medium text-navy">Sites web sur mesure</td>
+            <td class="p-4">Partir d'un besoin client, le reformuler, puis livrer pages, composants et formulaires, avec un regard sur la performance, l'accessibilité et le SEO technique. Les sites d'A2O sont développés avec Astro.</td>
+            <td class="p-4">Liverpool FC Manager : interface full-stack en binôme, API REST en PHP, authentification JWT. Plus HTML/CSS, Git, GitHub, MVC/DAO. À apprendre : Astro, TypeScript, accessibilité en conditions réelles.</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-medium text-navy">Déploiement et exploitation</td>
+            <td class="p-4">Un site n'est fini qu'une fois en ligne et suivi : environnements, Cloudflare, DNS, certificats, logs, sauvegardes, documentation des procédures.</td>
+            <td class="p-4">Liverpool FC Manager : déploiement sur AlwaysData, CI/CD avec GitHub Actions et FTP. Ce site : mon premier passage sur Cloudflare Pages. Déploiement d'outils internes à l'Union Africaine. À approfondir : DNS, certificats, logs.</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-medium text-navy">IA et automatisation</td>
+            <td class="p-4">Utiliser l'IA pour comprendre une base de code, générer une première version, comparer des solutions, tout en vérifiant le résultat. Côté clients : audit des usages, automatisation, intégration d'outils.</td>
+            <td class="p-4">J'ai déjà construit un système de questions-réponses RAG en Python et un workflow n8n pour un modèle prédictif. Je sais que la sortie d'une IA est un brouillon à contrôler, pas une réponse.</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-medium text-navy">Gouvernance numérique et organisation IT</td>
+            <td class="p-4">Recenser applications, comptes, droits, données et prestataires, puis transformer l'état des lieux en actions priorisées. Il s'agit de poser les bonnes questions et de structurer, pas de rendre un avis juridique.</td>
+            <td class="p-4">Ma spécialisation en gestion des données (MCD, dictionnaire de données, SQL) et mon stage en réseaux et sécurité m'ont appris à inventorier, structurer et appliquer des règles de sécurité de base. Le RGPD reste à approfondir.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-8 max-w-2xl">
+      Pourquoi ce stage ? Parce que j'aime les projets où l'on va du besoin à la mise en ligne, et parce qu'A2O relie deux choses que je veux apprendre ensemble : construire pour le web, et aider une organisation à utiliser l'IA sans perdre le contrôle de ses données et de ses processus.
+    </p>
+    <p class="mt-3 max-w-2xl text-sm text-ink/80">
+      Précision sur mon calendrier : je cherche un stage de 16 semaines à partir de mars 2027, ce qui rentre dans la fourchette de 2 à 6 mois de votre offre.
+    </p>
+  </div>
+</section>
+
+<!-- PARCOURS -->
+<section id="parcours" class="py-20 bg-mist">
+  <div class="max-w-5xl mx-auto px-5">
+    <h2 class="font-serif text-3xl md:text-4xl text-navy">Parcours et réalisations</h2>
+
+    <h3 class="font-serif text-xl text-navy mt-10 mb-4">Projets : six livrables, du web au réseau</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <article class="bg-white border border-line rounded-lg p-6 flex flex-col">
+        <h4 class="font-semibold text-navy">Liverpool FC Manager</h4>
+        <p class="text-sm text-blue mt-1">Web · binôme</p>
+        <ul class="mt-3 text-sm space-y-1.5 list-disc pl-5">
+          <li>Interface full-stack pour piloter joueurs, matchs, compositions et statistiques.</li>
+          <li>API REST en PHP, front et back sécurisés par authentification JWT.</li>
+          <li>Déploiement sur AlwaysData, CI/CD automatisée avec GitHub Actions et FTP.</li>
+        </ul>
+        <p class="mt-auto pt-4 text-sm"><span class="font-medium">Pour A2O :</span> API, authentification, mise en ligne automatisée : le quotidien d'un projet web.</p>
+      </article>
+      <article class="bg-white border border-line rounded-lg p-6 flex flex-col">
+        <h4 class="font-semibold text-navy">Open Food Facts : de 1 Go de données brutes à un modèle</h4>
+        <p class="text-sm text-blue mt-1">Data &amp; IA · équipe de 5, 2 mois</p>
+        <ul class="mt-3 text-sm space-y-1.5 list-disc pl-5">
+          <li>Nettoyage du dataset sous KNIME, dashboards Power BI.</li>
+          <li>Système de questions-réponses RAG en Python.</li>
+          <li>Modèle prédictif du Nutri-Score, orchestré avec KNIME et n8n.</li>
+        </ul>
+        <p class="mt-auto pt-4 text-sm"><span class="font-medium">Pour A2O :</span> brancher une IA sur un corpus précis et automatiser le flux.</p>
+      </article>
+      <article class="bg-white border border-line rounded-lg p-6 flex flex-col">
+        <h4 class="font-semibold text-navy">Analyse d'algorithmes de graphes</h4>
+        <p class="text-sm text-blue mt-1">Data &amp; algorithmique · équipe de 3, IUT 2025-2026</p>
+        <ul class="mt-3 text-sm space-y-1.5 list-disc pl-5">
+          <li>Dijkstra et Bellman-Ford pour les plus courts chemins en graphe pondéré.</li>
+          <li>Graphes aléatoires générés et visualisés ; impact de l'ordre de parcours des arêtes sur Bellman-Ford.</li>
+          <li>Complexité comparée par l'expérience, seuils de forte connexité analysés avec NumPy, Matplotlib, SciPy et NetworkX.</li>
+        </ul>
+        <p class="mt-auto pt-4 text-sm"><span class="font-medium">Pour A2O :</span> formuler une hypothèse, la mesurer, conclure avec des chiffres.</p>
+      </article>
+      <article class="bg-white border border-line rounded-lg p-6 flex flex-col">
+        <h4 class="font-semibold text-navy">Application de gestion locative</h4>
+        <p class="text-sm text-blue mt-1">Systèmes d'information · groupe de 6, 5 mois</p>
+        <ul class="mt-3 text-sm space-y-1.5 list-disc pl-5">
+          <li>Base modélisée de A à Z : MCD et dictionnaire de données.</li>
+          <li>Application Java en MVC avec patron DAO.</li>
+          <li>Requêtes SQL/PL-SQL pour calculer loyers et charges.</li>
+        </ul>
+        <p class="mt-auto pt-4 text-sm"><span class="font-medium">Pour A2O :</span> structurer données et processus avant de coder.</p>
+      </article>
+      <article class="bg-white border border-line rounded-lg p-6 flex flex-col">
+        <h4 class="font-semibold text-navy">Proxy FTP en C</h4>
+        <p class="text-sm text-blue mt-1">Réseaux · équipe de 3</p>
+        <ul class="mt-3 text-sm space-y-1.5 list-disc pl-5">
+          <li>Proxy TCP en C (sockets) qui intercepte et relaie les échanges entre client et serveur FTP.</li>
+          <li>Authentification FTP, commandes et listes de fichiers gérées ; mode actif (PORT) converti en mode passif (PASV).</li>
+          <li>Architecture client-serveur, résolution DNS, gestion des connexions.</li>
+        </ul>
+        <p class="mt-auto pt-4 text-sm"><span class="font-medium">Pour A2O :</span> comprendre ce qui circule vraiment sur un réseau, utile pour DNS, incidents et sécurité.</p>
+      </article>
+      <article class="bg-white border border-line rounded-lg p-6 flex flex-col">
+        <h4 class="font-semibold text-navy">Pierre-papier-ciseaux en Python / Pygame</h4>
+        <p class="text-sm text-blue mt-1">Projet personnel</p>
+        <ul class="mt-3 text-sm space-y-1.5 list-disc pl-5">
+          <li>Jeu interactif : joueur contre ordinateur ou contre joueur.</li>
+          <li>Interface animée, gestion d'événements, états de jeu, scores et manches.</li>
+          <li>Code modulaire : logique, interface et animations séparées.</li>
+        </ul>
+        <p class="mt-auto pt-4 text-sm"><span class="font-medium">Pour A2O :</span> écrire du code lisible et découpé, que quelqu'un d'autre peut reprendre.</p>
+      </article>
+    </div>
+
+    <h3 class="font-serif text-xl text-navy mt-12 mb-4">Expériences</h3>
+    <div class="space-y-4">
+      <article class="bg-white border border-line rounded-lg p-6">
+        <h4 class="font-semibold text-navy">Stage réseaux et sécurité informatique, Union Africaine (Addis-Abeba)</h4>
+        <p class="text-sm text-ink/70 mt-1">3 mois, 2026</p>
+        <p class="mt-3 text-sm">Postes configurés, incidents utilisateurs réglés, outils internes déployés, bonnes pratiques de cybersécurité appliquées. Mon premier contact avec l'IT d'une vraie organisation, au cœur de ce que vous appelez gouvernance numérique.</p>
+      </article>
+      <article class="bg-white border border-line rounded-lg p-6">
+        <h4 class="font-semibold text-navy">Séminaire international NAFGA, Chine</h4>
+        <p class="mt-3 text-sm">Choisi parmi 4 représentants de la Commission de l'Union africaine pour un séminaire sur le climat, l'IA et les systèmes d'information, face à des représentants de 12 pays. Expliquer un sujet technique à un public varié : c'est là que je l'ai appris.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CREATEUR -->
+<section id="createur" class="py-20">
+  <div class="max-w-5xl mx-auto px-5">
+    <h2 class="font-serif text-3xl md:text-4xl text-navy">Créateur TikTok : 75 000 abonnés, 6 M de vues et une méthode</h2>
+    <p class="mt-4 max-w-2xl">
+      Les vues sont un résultat, pas un pilotage. Ce qui m'a fait grandir, c'est d'avoir traité chaque vidéo comme un petit produit à mesurer et à améliorer.
+    </p>
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <div class="border border-line rounded-lg p-6">
+        <h3 class="font-serif text-xl text-navy">Mesurer ce qui compte</h3>
+        <p class="mt-3 text-sm">Temps de visionnage, rétention, engagement, conversion : je lis ces indicateurs, pas seulement le compteur de vues.</p>
+        <p class="mt-3 text-sm text-ink/70">En entreprise : ce sont des KPI, comme le taux d'abandon d'une page ou un taux de conversion.</p>
+      </div>
+      <div class="border border-line rounded-lg p-6">
+        <h3 class="font-serif text-xl text-navy">Tester avant de croire</h3>
+        <p class="mt-3 text-sm">J'émets une hypothèse, je teste accroches, durées et formats, j'observe, puis j'itère.</p>
+        <p class="mt-3 text-sm text-ink/70">En entreprise : c'est un test A/B, la base d'une amélioration continue d'un site ou d'un produit.</p>
+      </div>
+      <div class="border border-line rounded-lg p-6">
+        <h3 class="font-serif text-xl text-navy">Décider depuis le comportement</h3>
+        <p class="mt-3 text-sm">Les réactions de l'audience deviennent des changements concrets dans les contenus suivants.</p>
+        <p class="mt-3 text-sm text-ink/70">En entreprise : c'est transformer des données en recommandations qu'une équipe peut appliquer.</p>
+      </div>
+    </div>
+    <p class="mt-8 max-w-2xl font-serif text-xl text-navy">
+      Python, SQL, Power BI et le Machine Learning me donnent les outils pour faire l'analyse. TikTok m'a appris le contexte réel d'une performance numérique.
+    </p>
+  </div>
+</section>
+
+<!-- COMPETENCES -->
+<section id="competences" class="py-20 bg-mist">
+  <div class="max-w-5xl mx-auto px-5">
+    <h2 class="font-serif text-3xl md:text-4xl text-navy">Compétences</h2>
+    <p class="mt-4 max-w-2xl">Ce que je maîtrise, ce que je connais, ce que je viens apprendre chez vous.</p>
+    <div class="mt-10 grid md:grid-cols-3 gap-x-8 gap-y-10">
+      <div>
+        <h3 class="font-serif text-xl text-navy border-b border-line pb-2">Web et déploiement</h3>
+        <p class="mt-3 text-sm text-ink/70">À l'aise</p>
+        <p class="text-sm">HTML/CSS, PHP (API REST), JWT, Git, GitHub, GitHub Actions</p>
+        <p class="mt-3 text-sm text-ink/70">Notions</p>
+        <p class="text-sm">JavaScript, Odoo (paramétrage fonctionnel)</p>
+        <p class="mt-3 text-sm text-ink/70">À découvrir en stage</p>
+        <p class="text-sm">Astro, TypeScript, Cloudflare, DNS</p>
+      </div>
+      <div>
+        <h3 class="font-serif text-xl text-navy border-b border-line pb-2">Données et IA</h3>
+        <p class="mt-3 text-sm text-ink/70">À l'aise</p>
+        <p class="text-sm">Python (Pandas, NumPy, Matplotlib, SciPy, NetworkX, Pygame), KNIME, Power BI, RAG, n8n</p>
+        <p class="mt-3 text-sm text-ink/70">Notions</p>
+        <p class="text-sm">Machine Learning, modélisation prédictive</p>
+      </div>
+      <div>
+        <h3 class="font-serif text-xl text-navy border-b border-line pb-2">Données, systèmes et réseaux</h3>
+        <p class="mt-3 text-sm text-ink/70">À l'aise</p>
+        <p class="text-sm">SQL / PL-SQL, MCD, Java (MVC, DAO), C (sockets TCP), FTP, DNS</p>
+        <p class="mt-3 text-sm text-ink/70">Notions</p>
+        <p class="text-sm">WinDev</p>
+        <p class="mt-3 text-sm text-ink/70">Langues</p>
+        <p class="text-sm">Français et anglais bilingues, amharique langue maternelle</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IA -->
+<section id="ia" class="py-20 bg-navy text-white">
+  <div class="max-w-5xl mx-auto px-5">
+    <h2 class="font-serif text-3xl md:text-4xl">Comment j'ai utilisé l'IA pour ce site</h2>
+    <p class="mt-4 max-w-2xl text-sky/90">
+      Outil utilisé : <strong>Claude</strong> (Anthropic). Je l'ai utilisé pour structurer le site, écrire la première version du code (HTML, Tailwind via CDN, JavaScript) et proposer une première rédaction. Je n'ai pas gardé ce résultat tel quel, voici pourquoi.
+    </p>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <div class="border border-white/20 rounded-lg p-6">
+        <h3 class="font-serif text-xl">Ce que j'ai demandé à l'IA</h3>
+        <ul class="mt-3 text-sm space-y-2 text-sky/90 list-disc pl-5">
+          <li>Un plan à partir de votre offre, de votre document de candidature et de mon CV</li>
+          <li>Le code complet d'une page unique, légère et responsive</li>
+          <li>Une première version des textes, dans un ton direct</li>
+        </ul>
+      </div>
+      <div class="border border-white/20 rounded-lg p-6">
+        <h3 class="font-serif text-xl">Ce que j'ai vérifié et corrigé</h3>
+        <ul class="mt-3 text-sm space-y-2 text-sky/90 list-disc pl-5">
+          <li>Chaque affirmation sur mon parcours, comparée à mon CV</li>
+          <li>La cohérence entre mes dates (stage de 16 semaines dès mars 2027) et votre offre</li>
+          <li>Les liens, la navigation au clavier et l'affichage sur mobile</li>
+        </ul>
+      </div>
+      <div class="border border-white/20 rounded-lg p-6">
+        <h3 class="font-serif text-xl">Ce qui reste de moi</h3>
+        <ul class="mt-3 text-sm space-y-2 text-sky/90 list-disc pl-5">
+          <li>Ma lecture de l'offre et les limites que je reconnais dans mes compétences</li>
+          <li>Le choix de ce que je mets en avant</li>
+          <li>Le déploiement sur Cloudflare Pages</li>
+        </ul>
+      </div>
+    </div>
+
+    <details class="mt-8 border border-white/20 rounded-lg">
+      <summary class="p-5 flex items-center justify-between font-medium">
+        Difficultés rencontrées et choix techniques
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="px-5 pb-5 text-sm text-sky/90 space-y-3">
+        <p><strong>Stack :</strong> un seul fichier HTML, Tailwind en CDN et un peu de JavaScript natif (menu mobile). Ce choix permet de déployer en quelques minutes. Je sais qu'en production on compilerait Tailwind plutôt que de le charger depuis un CDN, et c'est le type de sujet que j'aimerais découvrir avec Astro.</p>
+        <p><strong>Point de vigilance :</strong> l'IA tend à formuler les choses de façon plus flatteuse que la réalité. J'ai donc retiré ou nuancé ce que je ne maîtrise pas encore, d'où la mention « à découvrir en stage » dans mes compétences.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20">
+  <div class="max-w-5xl mx-auto px-5">
+    <h2 class="font-serif text-3xl md:text-4xl text-navy">Échangeons</h2>
+    <p class="mt-4 max-w-xl">Je serais heureux de vous présenter ce site de vive voix et de parler de ce que je pourrais apporter à vos projets.</p>
+    <ul class="mt-8 grid sm:grid-cols-2 gap-4 max-w-2xl">
+      <li><a class="block border border-line rounded-lg p-4 hover:border-blue" href="mailto:nathantek2006@gmail.com"><span class="block text-sm text-ink/70">E-mail</span>nathantek2006@gmail.com</a></li>
+      <li><a class="block border border-line rounded-lg p-4 hover:border-blue" href="https://github.com/nathanHisabu" target="_blank" rel="noopener"><span class="block text-sm text-ink/70">GitHub</span>github.com/nathanHisabu</a></li>
+      <li><a class="block border border-line rounded-lg p-4 hover:border-blue" href="https://linkedin.com/in/nathan-hisabu" target="_blank" rel="noopener"><span class="block text-sm text-ink/70">LinkedIn</span>linkedin.com/in/nathan-hisabu</a></li>
+      <li><a class="block border border-line rounded-lg p-4 hover:border-blue" href="https://tiktok.com/@nathan_freestyle" target="_blank" rel="noopener"><span class="block text-sm text-ink/70">TikTok</span>@nathan_freestyle</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-line py-8">
+  <div class="max-w-5xl mx-auto px-5 flex flex-wrap items-center justify-between gap-4 text-sm text-ink/70">
+    <p>Nathan Hisabu, candidature au stage web, IA &amp; gouvernance numérique.</p>
+    <span class="inline-flex items-center gap-2 border border-line rounded-full px-3 py-1">
+      <span class="w-2 h-2 rounded-full bg-orange-500"></span> Hébergé sur Cloudflare Pages
+    </span>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.add('hidden');
+    btn.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+</body>
+</html>
